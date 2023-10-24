@@ -1,0 +1,6 @@
+<h1>New game</h1>
+<form action="games" method="TODO" data-turbo="false">
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>
+<%@ramdom_word = @words.shuffle[0, 10]%>
+<%=@ramdom_word%>
